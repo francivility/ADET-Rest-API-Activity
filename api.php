@@ -10,8 +10,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $type = $conn->real_escape_string($data['membership_type']);
     $expiry = date('Y-m-d', strtotime('+30 days'));
 
-    $sql = "INSERT INTO applicants (fullname, email, membership_type, price, expiry_date) 
-            VALUES ('$name', '$email', '$type', 500, '$expiry')";
+    $sql = "INSERT INTO applicants (fullname, email, membership_type, price, created_date) 
+            VALUES ('$name', '$email', '$type', 500, '$created')";
 
     if ($conn->query($sql)) {
         // --- EMAIL BLOCK ---
