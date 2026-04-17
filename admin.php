@@ -76,7 +76,7 @@
                             <tr>
                                 <th class="p-6">Member Info</th>
                                 <th class="p-6">Plan</th>
-                                <th class="p-6">Expiry</th>
+                                <th class="p-6">Created</th>
                                 <th class="p-6 text-right">Status</th>
                             </tr>
                         </thead>
